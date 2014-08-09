@@ -5,7 +5,7 @@ _An extension to the `<audio>` element for 8-bit music passed in as algorithm po
 
 ## Idea
 
-Inspired by a talk of [Manuel Ruelke](https://github.com/homecoded) at the JSUnconf 2014 about low-level sound-synthesizing with the help of small algorithms, I built this extension to the `<audio>`-tag that takes the length in bytes and the song-algorithm via attributes. It then generates a Base64-encoded Wave-bytestring inside a WebWorker which is set as source of the `<audio>`-tag.
+Inspired by a talk of [Manuel Ruelke](https://github.com/homecoded) at the JSUnconf 2014 about low-level sound-synthesis with the help of small algorithms, I built this extension to the `<audio>`-tag that takes the length in bytes and the song-algorithm via attributes. It then generates a Base64-encoded Wave-bytestring inside a WebWorker which is set as the source of the `<audio>`-tag.
 
 The whole thing goes back to this article: [140bytes Music SoftSynth](http://www.p01.org/releases/140bytes_music_softSynth/).
 
@@ -47,7 +47,7 @@ If you want to learn more about how to write these algorithms I recommend the ar
 
 ## Browser support
 
-I actually didn't test on all browsers. But one could say that it works on all modern browsers that support `Worker`, `Blob` and `URL`. Though there might be browsers that bristles. For instance Safari doesn't support `atob` and `btoa` in WebWorkers. That's why the compiling simply doesn't work. Other problems may or may not exist. Im' curious!
+I actually didn't test in all browsers. But one could say that it works in all modern browsers that support `Worker`, `Blob` and `URL`. Though there might be browsers that bristles. For instance Safari doesn't support `atob` and `btoa` in WebWorkers. That's why the compiling simply doesn't work. Other problems may or may not exist. Im' curious!
 
 ## Author
 
