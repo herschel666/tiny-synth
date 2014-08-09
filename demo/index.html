@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>Basic-Synth-Demo</title>
+  <script src="../bower_components/x-tag-core/dist/x-tag-core.min.js"></script>
+  <script src="../src/basic-synth.js"></script>
+</head>
+<body>
+  <!-- Source of song: http://www.p01.org/releases/140bytes_music_softSynth/ -->
+  <audio is="basic-synth"
+    wav="(('1111553322441221'[15&t>>14]*t*(1+'0100002'[7&t>>13]*(Math.cos((t%6800)/12000))))&(63 + 24*Math.sin(t/1500)))|((t*(1&t>>10))>>4)"
+    length="30000"
+    controls>
+</body>
+</html>

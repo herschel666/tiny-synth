@@ -1,0 +1,28 @@
+{
+  "name": "Basic Synth",
+  "tagName": "basic-synth",
+  "version": "0.1.0",
+  "author": "Emanuel Kluge",
+  "description": "A basic declaritive 8-bit synthesizer",
+  "images": [],
+  "categories": [],
+  "demo": "demo/index.html",
+  "xtag": "0.9.7",
+  "documentation": {
+    "attributes": {
+      "wav": "The algorithm providing the bytes.",
+      "length": "The length of the audio in bytes"
+    },
+    "methods": {
+      "compile": "Compiles the algorithm into a Base64-encoded Wave-string."
+    },
+    "getters": {
+      "wav": "Returns the current algorithm",
+      "length": "Returns the current byte-length"
+    },
+    "setters": {
+      "wav": "Sets the current algorithm",
+      "length": "Sets the current byte-length"
+    }
+  }
+}
