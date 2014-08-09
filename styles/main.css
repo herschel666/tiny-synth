@@ -1,0 +1,79 @@
+body {
+  max-width: 40em;
+  padding: 1.5em 0;
+  margin: 0 auto;
+  color: #666;
+  font: normal 100%/1.2 sans-serif;
+}
+
+header, main, footer {
+  display: block;
+}
+
+a {
+  color: #2F73C9;
+  text-decoration: none;
+}
+
+a:link,
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  margin-bottom: .2em;
+}
+
+h2 {
+  margin-top: 2em;
+}
+
+p {
+  margin-bottom: 2em;
+}
+
+small {
+  color: #7C7C7C;
+}
+
+small b {
+  font-size: 1.1em;
+}
+
+input {
+  padding: .2em .1em;
+  margin: .5em 0;
+  line-height: 1.5;
+  font-size: 1.2em;
+  display: block;
+  width: 100%;
+  border: 1px solid #BBB;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-transition: box-shadow .2s linear;
+  transition: box-shadow .2s linear;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 3px #2F73C9;
+}
+
+header {
+  padding-bottom: 1em;
+  margin-bottom: 1.5em;
+  border-bottom: 2px solid #DDD;
+}
+
+header p {
+  margin-bottom: .75em;
+}
+
+footer {
+  padding-top: 1.5em;
+  margin-top: 1.5em;
+  border-top: 2px solid #DDD;
+}
