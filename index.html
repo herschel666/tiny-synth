@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width" />
-  <title>Basic Synth Demo</title>
+  <title>Tiny Synth Demo</title>
   <link rel="stylesheet" href="./styles/main.css">
   <script src="./scripts/x-tag-core.min.js"></script>
-  <script src="./scripts/basic-synth.min.js"></script>
+  <script src="./scripts/tiny-synth.min.js"></script>
 </head>
 <body>
 
   <header>
-    <h1>Basic Synth</h1>
+    <h1>Tiny Synth</h1>
     <p>An extension to the &lt;audio&gt;-tag enabling low-level sound-synthesis by passing in algorithms.</p>
-    <iframe src="http://ghbtns.com/github-btn.html?user=herschel666&amp;repo=basic-synth&amp;type=fork" allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
-    <iframe src="http://ghbtns.com/github-btn.html?user=herschel666&amp;repo=basic-synth&amp;type=star" allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
+    <iframe src="http://ghbtns.com/github-btn.html?user=herschel666&amp;repo=tiny-synth&amp;type=fork" allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
+    <iframe src="http://ghbtns.com/github-btn.html?user=herschel666&amp;repo=tiny-synth&amp;type=star" allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
   </header>
 
   <main>
     <audio id="synth"
-      is="basic-synth"
+      is="tiny-synth"
       wav="(('1111553322441221'[15&t>>14]*t*(1+'0100002'[7&t>>13]*(Math.cos((t%6800)/12000))))&(63 + 24*Math.sin(t/1500)))|((t*(1&t>>10))>>4)"
       length="60000"
       controls></audio>
