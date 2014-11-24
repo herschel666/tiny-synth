@@ -13,7 +13,7 @@ module.exports = (grunt) ->
       ' *',
       ' * <%= pkg.author.url %>',
       ' *',
-      ' * @element basic-synth',
+      ' * @element <%= pkg.name %>',
       ' *',
       ' * Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;',
       ' * Licensed <%= pkg.license %>',

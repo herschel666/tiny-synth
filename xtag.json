@@ -1,7 +1,7 @@
 {
-  "name": "Basic Synth",
-  "tagName": "basic-synth",
-  "version": "0.1.0",
+  "name": "Tiny Synth",
+  "tagName": "tiny-synth",
+  "version": "0.1.1",
   "author": "Emanuel Kluge",
   "description": "A basic declaritive 8-bit synthesizer",
   "images": [],

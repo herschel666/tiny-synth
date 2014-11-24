@@ -1,19 +1,3 @@
-/**
- * basic-synth - 0.1.0
- *
- * A basic declarative synthesizer
- *
- * http://www.emanuel-kluge.de/
- *
- * @element basic-synth
- *
- * Copyright (c) 2014 Emanuel Kluge;
- * Licensed MIT
- */
-
-
-(function (window, xtag) {
-
 
 var URL = window.URL || window.webkitURL
 var workerFn = "onmessage = function (evnt) {" +
@@ -27,7 +11,7 @@ var workerFn = "onmessage = function (evnt) {" +
   "postMessage(btoa(bytes));" +
 "}";
 
-xtag.register('basic-synth', {
+xtag.register('tiny-synth', {
 
   extends: 'audio',
 
@@ -93,6 +77,3 @@ xtag.register('basic-synth', {
   }
 
 });
-
-
-})(window, xtag);

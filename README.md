@@ -1,4 +1,4 @@
-Basic Synth
+Tiny Synth
 ====
 
 _An extension to the `<audio>` element for 8-bit music passed in as algorithm powered by [Mozilla X-Tag](http://x-tags.org/)._
@@ -11,27 +11,27 @@ The whole thing goes back to this article: [140bytes Music SoftSynth](http://www
 
 ## Installation
 
-You need [NPM](https://www.npmjs.org/) and [Bower](http://bower.io/) installed on your computer. Then you can load **Basic Synth** by entering the following into your terminal:
+You need [NPM](https://www.npmjs.org/) and [Bower](http://bower.io/) installed on your computer. Then you can load **Tiny Synth** by entering the following into your terminal:
 
 ```bash
-$ bower install basic-synth
+$ bower install tiny-synth
 ```
 
-Afterwards you need to include the X-Tag-core script and the **Basic Synth** script into your page:
+Afterwards you need to include the X-Tag-core script and the **Tiny Synth** script into your page:
 
 ```html
 …
 <script src="/path/to/bower_components/x-tag-core/dist/x-tag-core.min.js"></script>
-<script src="/path/to/bower_components/basic-synth/dist/basic-synth.min.js"></script>
+<script src="/path/to/bower_components/tiny-synth/dist/tiny-synth.min.js"></script>
 …
 ```
 
 ## Usage
 
-Now you're ready to include **Basic Synth** `<audio>`-tags into your page:
+Now you're ready to include **Tiny Synth** `<audio>`-tags into your page:
 
 ```html
-<audio is="basic-synth"
+<audio is="tiny-synth"
   wav="(t<<3)*[8/9,1,9/8,6/5,4/3,3/2,0][[0xd2d2c8,0xce4088,0xca32c8,0x8e4009][t>>14&3]>>(0x3dbe4688>>((t>>10&15)>9?18:t>>10&15)*3&7)*3&7]&255"
   length="90000"
   controls>
@@ -43,7 +43,7 @@ If you want to learn more about how to write these algorithms I recommend the ar
 
 ## How it works
 
-**Basic Synth** takes the algorithm from the `wav`-attribute and passes it into a WebWorker that generates the Base64-encoded Wave-bytestring. The whole stuff gets eval'd, so be careful when you're using **Basic Synth**. Regarding the performance the evaluation of the algorithm is no problem. Or in other words: putting it into a WebWorker made the compiling like 1000 times faster!
+**Tiny Synth** takes the algorithm from the `wav`-attribute and passes it into a WebWorker that generates the Base64-encoded Wave-bytestring. The whole stuff gets eval'd, so be careful when you're using **Tiny Synth**. Regarding the performance the evaluation of the algorithm is no problem. Or in other words: putting it into a WebWorker made the compiling like 1000 times faster!
 
 ## Browser support
 
